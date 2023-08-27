@@ -1,0 +1,35 @@
+{{ 'header-default.css' | asset_url | stylesheet_tag }}
+
+<div class="header-default">
+  <div class="shell">
+
+  </div>
+  <!-- /.shell -->
+</div>
+<!-- /.header-default -->
+
+{% schema %}
+{
+  "name": "Header Default",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "SAMPLE-TYPE",
+      "name": "SAMPLE-NAME",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

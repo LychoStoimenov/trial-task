@@ -245,20 +245,15 @@
   </head>
 
   <body class="gradient">
-    <h2>
-        sdasdsasdad
-    </h2>
-
-    <h3>this h3 test</h3>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
-    {%- if settings.cart_type == 'drawer' -%}
+    {% comment %}{%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
-
-    {% sections 'header-group' %}
+{% endcomment %}
+    {% section 'header-default' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
